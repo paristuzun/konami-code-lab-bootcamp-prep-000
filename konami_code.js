@@ -13,12 +13,12 @@ const codes = [
 
 function init() {
   // your code here
-  document.body.addEventListener("keydown", checkClicks);
+  document.body.addEventListener("keydown", checkKeys);
 }
 
 let index = 0;
 
-function checkClicks(e){
+function checkKeys(e){
   const key = e.key;
   
   if(key === codes[index]){
