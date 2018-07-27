@@ -32,4 +32,6 @@ function checkClicks(e){
     index = 0;
   }
 }
+
+init()
   
