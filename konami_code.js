@@ -30,7 +30,7 @@ function init() {
    }
    
    else {
-     return
+     index = 0
    }
    }
   
