@@ -24,7 +24,7 @@ function init() {
     {
         index++;
 
-        if (index === code.length)
+        if (index === code.length - 1)
         {
           alert("YOU DID IT!");
           index = 0;
