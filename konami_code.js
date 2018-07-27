@@ -25,7 +25,14 @@ function init() {
    index++;
    }
    
-   if (index === code.length-1)
+   if (index === code.length-1) {
+     alert('Congratulations!');
+   }
+   
+   else {
+     return
+   }
+   }
   
 });
 
