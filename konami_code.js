@@ -27,8 +27,8 @@ function init()
 
         if (index === code.length)
         {
-          alert("YOU DID IT!")
-          index = 0
+          alert("YOU DID IT!");
+          index = 0;
         }
     }
     else {
