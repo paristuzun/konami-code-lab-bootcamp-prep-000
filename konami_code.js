@@ -28,6 +28,6 @@ function init(e) {
           }
         }
     }
-    element.addEventListener('keydown', init, true);
+    element.addEventListener('keydown', init);
 }
   
