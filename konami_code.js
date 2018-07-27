@@ -22,8 +22,10 @@ function init() {
    const key = parseInt(e.which)
    
   if (key === code[index]) {
-    return alert('Congratulations');
-  }
+   index++;
+   }
+   
+   
   
 });
 
