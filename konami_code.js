@@ -25,7 +25,7 @@ function init() {
    index++;
    }
    
-   
+   if (index === code.length-1)
   
 });
 
