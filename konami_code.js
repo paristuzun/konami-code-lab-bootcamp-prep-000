@@ -11,7 +11,7 @@ const codes = [
   "a"
 ];
 
-const code = []
+const code = [38, 38, 40, 40, ]
 
 function init() {
   
