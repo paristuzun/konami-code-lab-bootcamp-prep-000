@@ -20,7 +20,8 @@ function init() {
   document.addEventListener('keydown', function(e) {
     
    const key = parseInt(e.which)
-  if (e.which === 71) {
+   
+  if (key === 71) {
     return alert('Congratulations');
   }
   
