@@ -22,9 +22,9 @@ function init()
     const key = parseInt(e.detail || e.which)
     if (key === code[index])
     {
-        index++
+        index++;
 
-        if (code.length - 1 === index)
+        if (index === code.length)
         {
           alert("YOU DID IT!")
           index = 0
@@ -32,7 +32,7 @@ function init()
     }
     else
     {
-        index = 0
+        index = 0;
     }
   })
 }
