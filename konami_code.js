@@ -27,6 +27,7 @@ function init() {
    
    if (index === code.length-1) {
      alert('Congratulations!');
+     index = 0
    }
    
    else {
