@@ -11,29 +11,26 @@ const codes = [
   "a"
 ];
 
-const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+function init() {
+  // your code here
+  document.body.addEventListener("keydown", checkClicks);
+}
+
 let index = 0;
 
-function init() {
-
-
-  document.addEventListener('keydown', function(e)
-  {
-    const key = parseInt(e.detail || e.which)
-    if (key === code[index])
-    {
-        index++;
-
-        if (index === code.length - 1)
-        {
-          alert("YOU DID IT!");
-          index = 0;
-        }
+function checkClicks(e){
+  const key = e.key;
+  
+  if(key === codes[index]){
+    index++; 
+    if (index === codes.length){
+      alert("Hurray!");
+      index = 0;
     }
-    else {
-        index = 0;
-    }
-  })
+  }
+  else{
+    index = 0;
+  }
 }
 
 init()
