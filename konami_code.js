@@ -12,22 +12,15 @@ const codes = [
 ];
 
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
-var index = 0
-var element = document.getElementsByTagName('body')[0];
 
-function init(e) {
-    if(e) {
-    	if(parseInt(e.which || e.detail) == code[index]) {
-          index++;
-          if(index == code.length - 1) {
-              alert("YOU DID IT");
-              index = 0;
-          } else {
-              alert('too bad');
-              index = 0;
-          }
-        }
+function init() {
+  document.addEventListener('keydown', function(e) {
+    for (var i = 0; i < code.length; i++) {
+      const key = parseInt(e.detail || e.which);
+      if (key === code[i]) {
+        alert('Yes');
+      }
     }
-    element.addEventListener('keydown', init);
+  });
 }
   
