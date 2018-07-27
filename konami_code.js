@@ -19,6 +19,7 @@ function init() {
   
   document.addEventListener('keydown', function(e) {
     
+    const key = 
   if (e.which === 71) {
     return alert('Congratulations');
   }
